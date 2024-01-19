@@ -1,115 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="2" failed="2" skipped="1">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-18T23:52:15 IST" name="Suite" finished-at="2024-01-18T23:53:01 IST" duration-ms="46252">
+  <suite started-at="2024-01-19T22:19:20 IST" name="Suite" finished-at="2024-01-19T22:19:39 IST" duration-ms="18516">
     <groups>
-      <group name="purchase">
-        <method signature="StandaloneTest.submitOrderTestCase(java.lang.String,java.lang.String)[pri:0, instance:project.PostiveScenario.StandaloneTest@2254127a]" name="submitOrderTestCase" class="project.PostiveScenario.StandaloneTest"/>
-        <method signature="ErrorValidationTestCase.errorTestCase(java.lang.String,java.lang.String)[pri:0, instance:project.ErrorTest.ErrorValidationTestCase@3cce57c7]" name="errorTestCase" class="project.ErrorTest.ErrorValidationTestCase"/>
-      </group> <!-- purchase -->
+      <group name="purchaseOrder">
+        <method signature="StandaloneTest.submitOrderTestCase(java.lang.String,java.lang.String)[pri:0, instance:project.PostiveScenario.StandaloneTest@41330d4f]" name="submitOrderTestCase" class="project.PostiveScenario.StandaloneTest"/>
+        <method signature="StandaloneTest.verifyProduct()[pri:0, instance:project.PostiveScenario.StandaloneTest@41330d4f]" name="verifyProduct" class="project.PostiveScenario.StandaloneTest"/>
+      </group> <!-- purchaseOrder -->
     </groups>
-    <test started-at="2024-01-18T23:52:15 IST" name="Test positive scenario" finished-at="2024-01-18T23:52:51 IST" duration-ms="35826">
+    <test started-at="2024-01-19T22:19:20 IST" name="Test positive scenario" finished-at="2024-01-19T22:19:39 IST" duration-ms="18516">
       <class name="project.PostiveScenario.StandaloneTest">
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:project.PostiveScenario.StandaloneTest@2254127a]" started-at="2024-01-18T23:52:15 IST" name="initializeDriver" finished-at="2024-01-18T23:52:16 IST" duration-ms="1291" status="PASS">
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:project.PostiveScenario.StandaloneTest@41330d4f]" started-at="2024-01-19T22:19:20 IST" name="initializeDriver" finished-at="2024-01-19T22:19:21 IST" duration-ms="1283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeDriver -->
-        <test-method signature="submitOrderTestCase(java.lang.String,java.lang.String)[pri:0, instance:project.PostiveScenario.StandaloneTest@2254127a]" started-at="2024-01-18T23:52:16 IST" name="submitOrderTestCase" data-provider="getData" finished-at="2024-01-18T23:52:37 IST" duration-ms="20944" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[guptasudhir606@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Password1$]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"button[routerlink='/dashboard/cart']"}
-  (Session info: chrome=120.0.6099.218)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7fb52da3ee46bc17089cff1831026e58, findElement {using=css selector, value=button[routerlink='/dashboard/cart']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.218, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\sudhi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58779}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58779/devtoo..., se:cdpVersion: 120.0.6099.218, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7fb52da3ee46bc17089cff1831026e58]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"button[routerlink='/dashboard/cart']"}
-  (Session info: chrome=120.0.6099.218)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7fb52da3ee46bc17089cff1831026e58, findElement {using=css selector, value=button[routerlink='/dashboard/cart']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.218, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\sudhi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58779}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58779/devtoo..., se:cdpVersion: 120.0.6099.218, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7fb52da3ee46bc17089cff1831026e58
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at project.AbstractComponent.AbstractComponent.cartClick(AbstractComponent.java:44)
-at project.PostiveScenario.StandaloneTest.submitOrderTestCase(StandaloneTest.java:50)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitOrderTestCase -->
-        <test-method is-config="true" signature="close()[pri:0, instance:project.PostiveScenario.StandaloneTest@2254127a]" started-at="2024-01-18T23:52:37 IST" name="close" finished-at="2024-01-18T23:52:37 IST" duration-ms="125" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:project.PostiveScenario.StandaloneTest@2254127a]" started-at="2024-01-18T23:52:37 IST" name="initializeDriver" finished-at="2024-01-18T23:52:38 IST" duration-ms="748" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeDriver -->
-        <test-method signature="submitOrderTestCase(java.lang.String,java.lang.String)[pri:0, instance:project.PostiveScenario.StandaloneTest@2254127a]" started-at="2024-01-18T23:52:38 IST" name="submitOrderTestCase" data-provider="getData" finished-at="2024-01-18T23:52:50 IST" duration-ms="12242" status="PASS">
+        <test-method signature="submitOrderTestCase(java.lang.String,java.lang.String)[pri:0, instance:project.PostiveScenario.StandaloneTest@41330d4f]" started-at="2024-01-19T22:19:21 IST" name="submitOrderTestCase" data-provider="getData" finished-at="2024-01-19T22:19:35 IST" duration-ms="13906" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -125,167 +31,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrderTestCase -->
-        <test-method is-config="true" signature="close()[pri:0, instance:project.PostiveScenario.StandaloneTest@2254127a]" started-at="2024-01-18T23:52:50 IST" name="close" finished-at="2024-01-18T23:52:51 IST" duration-ms="97" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:project.PostiveScenario.StandaloneTest@41330d4f]" started-at="2024-01-19T22:19:35 IST" name="close" finished-at="2024-01-19T22:19:35 IST" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method signature="verifyProduct()[pri:0, instance:project.PostiveScenario.StandaloneTest@2254127a]" started-at="2024-01-18T23:52:51 IST" name="verifyProduct" finished-at="2024-01-18T23:52:51 IST" depends-on-methods="project.PostiveScenario.StandaloneTest.submitOrderTestCase" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method project.PostiveScenario.StandaloneTest.verifyProduct() on instance project.PostiveScenario.StandaloneTest@2254127a depends on not successfully finished methods 
-[project.PostiveScenario.StandaloneTest.submitOrderTestCase() on instance project.PostiveScenario.StandaloneTest@2254127a]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method project.PostiveScenario.StandaloneTest.verifyProduct() on instance project.PostiveScenario.StandaloneTest@2254127a depends on not successfully finished methods 
-[project.PostiveScenario.StandaloneTest.submitOrderTestCase() on instance project.PostiveScenario.StandaloneTest@2254127a]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:project.PostiveScenario.StandaloneTest@41330d4f]" started-at="2024-01-19T22:19:35 IST" name="initializeDriver" finished-at="2024-01-19T22:19:36 IST" duration-ms="741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method signature="verifyProduct()[pri:0, instance:project.PostiveScenario.StandaloneTest@41330d4f]" started-at="2024-01-19T22:19:36 IST" name="verifyProduct" finished-at="2024-01-19T22:19:39 IST" depends-on-methods="project.PostiveScenario.StandaloneTest.submitOrderTestCase" duration-ms="2364" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProduct -->
+        <test-method is-config="true" signature="close()[pri:0, instance:project.PostiveScenario.StandaloneTest@41330d4f]" started-at="2024-01-19T22:19:39 IST" name="close" finished-at="2024-01-19T22:19:39 IST" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
       </class> <!-- project.PostiveScenario.StandaloneTest -->
     </test> <!-- Test positive scenario -->
-    <test started-at="2024-01-18T23:52:51 IST" name="Test error validation" finished-at="2024-01-18T23:53:01 IST" duration-ms="10062">
-      <class name="project.ErrorTest.ErrorValidationTestCase">
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:project.ErrorTest.ErrorValidationTestCase@3cce57c7]" started-at="2024-01-18T23:52:51 IST" name="initializeDriver" finished-at="2024-01-18T23:52:52 IST" duration-ms="738" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeDriver -->
-        <test-method signature="errorTestCase(java.lang.String,java.lang.String)[pri:0, instance:project.ErrorTest.ErrorValidationTestCase@3cce57c7]" started-at="2024-01-18T23:52:52 IST" name="errorTestCase" data-provider="getData" finished-at="2024-01-18T23:52:53 IST" duration-ms="869" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[guptasudhir606@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Password1$]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- errorTestCase -->
-        <test-method is-config="true" signature="close()[pri:0, instance:project.ErrorTest.ErrorValidationTestCase@3cce57c7]" started-at="2024-01-18T23:52:53 IST" name="close" finished-at="2024-01-18T23:52:53 IST" duration-ms="65" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-        <test-method is-config="true" signature="initializeDriver()[pri:0, instance:project.ErrorTest.ErrorValidationTestCase@3cce57c7]" started-at="2024-01-18T23:52:53 IST" name="initializeDriver" finished-at="2024-01-18T23:52:53 IST" duration-ms="735" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeDriver -->
-        <test-method signature="errorTestCase(java.lang.String,java.lang.String)[pri:0, instance:project.ErrorTest.ErrorValidationTestCase@3cce57c7]" started-at="2024-01-18T23:52:53 IST" name="errorTestCase" data-provider="getData" finished-at="2024-01-18T23:53:01 IST" duration-ms="7391" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sudhirgupta606@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Password1$]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"div[aria-label='Incorrect email or password.']"}
-  (Session info: chrome=120.0.6099.218)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [12b4ff999228d25ffe60df47296e8792, findElement {using=css selector, value=div[aria-label='Incorrect email or password.']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.218, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\sudhi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58858}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58858/devtoo..., se:cdpVersion: 120.0.6099.218, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 12b4ff999228d25ffe60df47296e8792]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"div[aria-label='Incorrect email or password.']"}
-  (Session info: chrome=120.0.6099.218)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [12b4ff999228d25ffe60df47296e8792, findElement {using=css selector, value=div[aria-label='Incorrect email or password.']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.218, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\sudhi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58858}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58858/devtoo..., se:cdpVersion: 120.0.6099.218, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 12b4ff999228d25ffe60df47296e8792
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
-at project.PageObject.LandingPage.incorrectIdOrPassword(LandingPage.java:55)
-at project.ErrorTest.ErrorValidationTestCase.errorTestCase(ErrorValidationTestCase.java:23)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- errorTestCase -->
-        <test-method is-config="true" signature="close()[pri:0, instance:project.ErrorTest.ErrorValidationTestCase@3cce57c7]" started-at="2024-01-18T23:53:01 IST" name="close" finished-at="2024-01-18T23:53:01 IST" duration-ms="86" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- project.ErrorTest.ErrorValidationTestCase -->
-    </test> <!-- Test error validation -->
   </suite> <!-- Suite -->
 </testng-results>

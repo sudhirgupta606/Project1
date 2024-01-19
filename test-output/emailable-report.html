@@ -9,72 +9,11 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test positive scenario</a></td><td class="num">1</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">35,826</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Test error validation</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">10,062</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num attn">1</th><th class="num">0</th><th class="num attn">2</th><th class="num">45,888</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">Test positive scenario</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">18,516</td><td>purchaseOrder</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test positive scenario &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">project.PostiveScenario.StandaloneTest</td><td><a href="#m0">submitOrderTestCase</a></td><td rowspan="1">1705602136578</td><td rowspan="1">20944</td></tr><tr><th colspan="4">Test positive scenario &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">project.PostiveScenario.StandaloneTest</td><td><a href="#m1">verifyProduct</a></td><td rowspan="1">1705602171082</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test positive scenario &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">project.PostiveScenario.StandaloneTest</td><td><a href="#m2">submitOrderTestCase</a></td><td rowspan="1">1705602158737</td><td rowspan="1">12242</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Test error validation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">project.ErrorTest.ErrorValidationTestCase</td><td><a href="#m3">errorTestCase</a></td><td rowspan="1">1705602173861</td><td rowspan="1">7391</td></tr><tr><th colspan="4">Test error validation &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">project.ErrorTest.ErrorValidationTestCase</td><td><a href="#m4">errorTestCase</a></td><td rowspan="1">1705602172190</td><td rowspan="1">869</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test positive scenario &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">project.PostiveScenario.StandaloneTest</td><td><a href="#m0">submitOrderTestCase</a></td><td rowspan="1">1705682961967</td><td rowspan="1">13906</td></tr><tr class="passedeven"><td><a href="#m1">verifyProduct</a></td><td rowspan="1">1705682976733</td><td rowspan="1">2364</td></tr></tbody>
 </table>
-<h2>Test positive scenario</h2><h3 id="m0">project.PostiveScenario.StandaloneTest#submitOrderTestCase</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>guptasudhir606@gmail.com</td><td>Password1$</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;button[routerlink=&apos;/dashboard/cart&apos;]&quot;}
-  (Session info: chrome=120.0.6099.218)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7fb52da3ee46bc17089cff1831026e58, findElement {using=css selector, value=button[routerlink=&apos;/dashboard/cart&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.218, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\sudhi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58779}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58779/devtoo..., se:cdpVersion: 120.0.6099.218, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7fb52da3ee46bc17089cff1831026e58
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-	at project.AbstractComponent.AbstractComponent.cartClick(AbstractComponent.java:44)
-	at project.PostiveScenario.StandaloneTest.submitOrderTestCase(StandaloneTest.java:50)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">project.PostiveScenario.StandaloneTest#verifyProduct</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method project.PostiveScenario.StandaloneTest.verifyProduct() on instance project.PostiveScenario.StandaloneTest@2254127a depends on not successfully finished methods 
-[project.PostiveScenario.StandaloneTest.submitOrderTestCase() on instance project.PostiveScenario.StandaloneTest@2254127a]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">project.PostiveScenario.StandaloneTest#submitOrderTestCase</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>sudhirgupta606@gmail.com</td><td>Password1$</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test error validation</h2><h3 id="m3">project.ErrorTest.ErrorValidationTestCase#errorTestCase</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>sudhirgupta606@gmail.com</td><td>Password1$</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div[aria-label=&apos;Incorrect email or password.&apos;]&quot;}
-  (Session info: chrome=120.0.6099.218)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [12b4ff999228d25ffe60df47296e8792, findElement {using=css selector, value=div[aria-label=&apos;Incorrect email or password.&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.218, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\sudhi\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58858}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58858/devtoo..., se:cdpVersion: 120.0.6099.218, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 12b4ff999228d25ffe60df47296e8792
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
-	at project.PageObject.LandingPage.incorrectIdOrPassword(LandingPage.java:55)
-	at project.ErrorTest.ErrorValidationTestCase.errorTestCase(ErrorValidationTestCase.java:23)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">project.ErrorTest.ErrorValidationTestCase#errorTestCase</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>guptasudhir606@gmail.com</td><td>Password1$</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test positive scenario</h2><h3 id="m0">project.PostiveScenario.StandaloneTest#submitOrderTestCase</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>sudhirgupta606@gmail.com</td><td>Password1$</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">project.PostiveScenario.StandaloneTest#verifyProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

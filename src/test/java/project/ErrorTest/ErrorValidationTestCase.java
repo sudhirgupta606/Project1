@@ -13,7 +13,7 @@ import project.testcomponent.BaseTestComponent;
 public class ErrorValidationTestCase extends BaseTestComponent{
 
 	
-	@Test(dataProvider=("getData"), dataProviderClass = StandaloneTest.class,groups= {"purchase"})
+	@Test(dataProvider=("getData"), dataProviderClass = BaseTestComponent.class,groups= {"purchase"})
 	public void errorTestCase(String username,String password)
 	{
 	LandingPage landingPage=new LandingPage(driver);

@@ -15,6 +15,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -65,8 +66,13 @@ public WebDriver driver;
 		  FileUtils.copyFile(source, destination);
 		  return System.getProperty("user.dir")+"\\standlone\\reports\\"+ testCaseName+".png";
 		  
-		  
 	  }
-	  
+	  @DataProvider
+		public Object[][] getData()
+		{	//if it has 2-3 parameter then its good if its more than 10,15 then we are not going to pass 10,15 which will look messy
+			Object data[][]=new Object[][] {/*{"guptasudhir606@gmail.com","Password1$"},*/{"sudhirgupta606@gmail.com","Password1$"}};
+			return data;
+			
+		}
 	  
 }

@@ -34,7 +34,7 @@ import project.testcomponent.BaseTestComponent;
 @Test
 public class StandaloneTest extends BaseTestComponent {
 	String productName="ZARA COAT 3";
-	@Test(dataProvider="getData",groups= {"purchase"})
+	@Test(dataProvider="getData",dataProviderClass = BaseTestComponent.class,groups= {"purchaseOrder"})
 	public  void submitOrderTestCase(String email, String password) throws IOException  {
 		// TODO Auto-generated method stub
 		
@@ -63,7 +63,7 @@ public class StandaloneTest extends BaseTestComponent {
 		
 	}
 	
-	@Test(dependsOnMethods= {"submitOrderTestCase"})
+	@Test(dependsOnMethods= {"submitOrderTestCase"},groups= {"purchaseOrder"})
 	public void verifyProduct()
 	{
 		LandingPage landingPage=new LandingPage(driver);
@@ -76,13 +76,7 @@ public class StandaloneTest extends BaseTestComponent {
 		
 	}
 	
-	@DataProvider
-	public Object[][] getData()
-	{	//if it has 2-3 parameter then its good if its more than 10,15 then we are not going to pass 10,15 which will look messy
-		Object data[][]=new Object[][] {{"guptasudhir606@gmail.com","Password1$"},{"sudhirgupta606@gmail.com","Password1$"}};
-		return data;
-		
-	}
+	
 	
 	
 	
