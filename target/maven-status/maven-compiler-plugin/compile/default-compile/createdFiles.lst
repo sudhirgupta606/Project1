@@ -1,0 +1,8 @@
+project\resources\ExtentReporters.class
+project\PageObject\CheckOutPage.class
+project\PageObject\LandingPage.class
+project\AbstractComponent\AbstractComponent.class
+project\PageObject\OrderPage.class
+project\PageObject\ProductPage.class
+project\PageObject\ConfirmationPage.class
+project\PageObject\CartPage.class

@@ -27,7 +27,7 @@ public WebDriver driver;
 		Properties prop = new Properties();
 		FileInputStream path = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\project\\resources\\GlobalData.properties");
 		prop.load(path);// here we have to give file path of global properties to load
-		String browserName=prop.getProperty("browser");		
+		String browserName=prop.getProperty("browser")!=null ? System.getProperty("browser"):prop.getProperty("browser","chrome");		
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
 
