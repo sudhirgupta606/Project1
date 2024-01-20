@@ -63,7 +63,7 @@ public class StandaloneTest extends BaseTestComponent {
 		
 	}
 	
-	@Test(dependsOnMethods= {"submitOrderTestCase"},groups= {"purchaseOrder2"})
+	@Test(/*dependsOnMethods= {"submitOrderTestCase"},*/groups= {"purchaseOrder2"})
 	public void verifyProduct()
 	{
 		LandingPage landingPage=new LandingPage(driver);
