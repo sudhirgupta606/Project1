@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="project.ErrorTest.ErrorValidationTestCase">
+      <class name="project.PostiveScenario.StandaloneTest">
         <methods>
           <include name="close"/>
           <include name="initializeDriver"/>
-          <include name="errorTestCase"/>
+          <include name="verifyProduct"/>
+          <include name="submitOrderTestCase"/>
         </methods>
-      </class> <!-- project.ErrorTest.ErrorValidationTestCase -->
+      </class> <!-- project.PostiveScenario.StandaloneTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
